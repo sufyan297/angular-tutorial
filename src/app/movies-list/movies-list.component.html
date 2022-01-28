@@ -1,0 +1,6 @@
+
+<div *ngIf="movies">
+    <div *ngFor="let movie of movies; let i = index;">
+        <app-movie-details [movie]="movie" [index]="i"></app-movie-details>
+    </div>
+</div>
